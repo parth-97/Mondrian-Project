@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0%;
+      padding: 0%;
+    }
+    .container{
+      display: grid;
+      background-color: #000;
+      grid-template-columns: 100px 100px 140px 70px 140px 25px;
+      grid-template-rows:40px 40px 100px 50px 50px  50px;
+      gap: 9px;
+      width: fit-content;
+      height: 300px;
+    }
+    .red1{
+       grid-row: span 2;
+    }
+    .white1{
+      grid-row: span 2;
+    }
+    .blue3{
+      grid-row: span 3;
+      height: 200px;
+    }
+    .white3{
+      grid-row: span 2;
+      height: 150px;
+    }
+    .white4{
+      grid-row: span 2;
+      height: 90px;
+    }
+    .red3{
+      grid-row: span 3;
+      height: 200px;
+      grid-column: span 2;
+    }
+    .yellow4{
+       grid-row: span 2;
+       height: 90px;
+    }
+    .blue2{
+      grid-row: span 2;
+    }
+    .red4{
+      grid-row: span 2;
+      height: 90px;
+    }
+    .r{
+     background-color: #E72F24;
+    }
+    .w{
+      background-color: #F0F1EC;
+    }
+    .B{
+      background-color: #232629;
+    }
+    .b{
+      background-color: #004592;
+    }
+    .y{
+      background-color: #F9D01E;
+    }
+  </style>
+</head>
+
+<body>
+ <div class="container">
+  <div class="r red1"></div>
+  <div class="w white1"></div>
+  <div class="y yellow1"></div>
+  <div class="w white2"></div>
+  <div class="r red2"></div>
+  <div class="y yellow2"></div>
+  <div class="b blue1"></div>
+  <div class="B black"></div>
+  <div class="w white3"></div>
+  <div class="b blue2"></div>
+  <div class="b blue3"></div>
+  <div class="y yellow3"> </div> 
+  <div class="r red3"></div>
+  <div class="w white4"></div>
+  <div class="y yellow4"></div>
+  <div class="r red4"></div>
+</div>
+</body>
+
+</html>
